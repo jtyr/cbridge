@@ -45,6 +45,25 @@ $ make manifest - generate new MANIFEST
 $ make dist     - pack all files in MANIFEST
 $ make clean    - clean dir
 </code></pre>
+
+<h1>Usage</h1>
+
+<pre><code>Usage: cbridge [OPTIONS]
+
+OPTIONS:
+  -s, --src=VAL          source address
+  -d, --dst=VAL          destination address
+  -p, --sport=VAL        source port
+  -r, --dport=VAL        destination port
+  -e, --debug            debug mode
+  -h, --help             display this help and exit
+
+Examples:
+cbridge --src=239.194.1.1 --sport=1234 --dst=137.138.165.238 --dport=1234
+cbridge --src=239.194.1.1 --sport=1234 --dst=137.138.165.237 --dport=1235 \
+                                       --dst=137.138.165.238 --dport=1236 \
+                                       --dst=137.138.165.239 --dport=1237
+</code></pre>
         </section>
 
         <footer>
